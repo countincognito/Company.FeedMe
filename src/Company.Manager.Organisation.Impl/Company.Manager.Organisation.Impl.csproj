@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="PubSub" Version="2.0.0" />
+    <PackageReference Include="Zametek.Utility.Logging" Version="0.7.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Company.Access.Organisation.Interface\Company.Access.Organisation.Interface.csproj" />
+    <ProjectReference Include="..\Company.Common.Data\Company.Common.Data.csproj" />
+    <ProjectReference Include="..\Company.Manager.Organisation.Interface\Company.Manager.Organisation.Interface.csproj" />
+  </ItemGroup>
+
+</Project>

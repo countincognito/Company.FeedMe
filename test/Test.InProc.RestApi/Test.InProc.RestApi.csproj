@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
+    <PackageReference Include="Serilog.Sinks.Seq" Version="4.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Company.Access.Appointment.Impl\Company.Access.Appointment.Impl.csproj" />
+    <ProjectReference Include="..\..\src\Company.Access.Organisation.Impl\Company.Access.Organisation.Impl.csproj" />
+    <ProjectReference Include="..\..\src\Company.Access.User.Impl\Company.Access.User.Impl.csproj" />
+    <ProjectReference Include="..\..\src\Company.Access.User.Interface\Company.Access.User.Interface.csproj" />
+    <ProjectReference Include="..\..\src\Company.Api.Rest.Impl\Company.Api.Rest.Impl.csproj" />
+    <ProjectReference Include="..\..\src\Company.Manager.Appointment.Impl\Company.Manager.Appointment.Impl.csproj" />
+    <ProjectReference Include="..\..\src\Company.Manager.Organisation.Impl\Company.Manager.Organisation.Impl.csproj" />
+    <ProjectReference Include="..\..\src\Company.Manager.User.Impl\Company.Manager.User.Impl.csproj" />
+  </ItemGroup>
+</Project>

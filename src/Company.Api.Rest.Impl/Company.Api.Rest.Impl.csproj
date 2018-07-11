@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <Platforms>AnyCPU;x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="4.0.1" />
+    <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.8" />
+    <PackageReference Include="Serilog" Version="2.7.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="2.5.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="2.5.0" />
+    <PackageReference Include="Zametek.Utility.Logging" Version="0.7.2" />
+    <PackageReference Include="Zametek.Utility.Logging.AspNetCore" Version="0.7.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Company.Api.Rest.Data\Company.Api.Rest.Data.csproj" />
+    <ProjectReference Include="..\Company.Common.Data\Company.Common.Data.csproj" />
+    <ProjectReference Include="..\Company.Manager.Appointment.Interface\Company.Manager.Appointment.Interface.csproj" />
+    <ProjectReference Include="..\Company.Manager.Organisation.Interface\Company.Manager.Organisation.Interface.csproj" />
+    <ProjectReference Include="..\Company.Manager.User.Interface\Company.Manager.User.Interface.csproj" />
+  </ItemGroup>
+  
+</Project>
