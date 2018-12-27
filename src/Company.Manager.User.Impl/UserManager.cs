@@ -1,7 +1,7 @@
 ﻿using Company.Access.User.Interface;
 using Company.Common.Data;
 using Company.Manager.User.Interface;
-using PubSub;
+using PubSub.Extension;
 using Serilog;
 using System;
 using System.Threading.Tasks;

@@ -3,7 +3,7 @@ using Company.Common.Data;
 using Company.Manager.Appointment.Interface;
 using Microsoft.WindowsAzure.Storage;
 using Microsoft.WindowsAzure.Storage.Queue;
-using PubSub;
+using PubSub.Extension;
 using Serilog;
 using System;
 using System.Collections.Generic;
